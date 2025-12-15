@@ -1,0 +1,2 @@
+# Optional extras for the PennyLane-based quantum demo
+pennylane>=0.35

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leap-phase2-pqc-payment-sim"
+version = "0.1.0"
+description = "Toy simulator for PQC signature migration in payment message flows (Project Leap Phase 2 inspired)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Your Name", email = "you@example.com"}
+]
+dependencies = [
+  "cryptography>=41.0.0",
+  "pydantic>=2.0.0",
+  "numpy>=1.23",
+  "matplotlib>=3.7",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+quantum = ["pennylane>=0.35"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
